@@ -13,11 +13,13 @@ The system is designed with a strong focus on **Database Engineering**, utilizin
 ---
 
 ## 📸 Screenshots
-<img width="1911" alt="Screenshot 1" src="screenshots/1.png" />
-<img width="1901" alt="Screenshot 2" src="screenshots/2.png" />
-<img width="1916" alt="Screenshot 3" src="screenshots/3.png" />
-<img width="1895" alt="Screenshot 4" src="screenshots/4.png" />
-<img width="1505" alt="Screenshot 5" src="screenshots/5.png" />
+
+<img width="1916" height="695" alt="5" src="https://github.com/user-attachments/assets/7c9cdde6-f925-492b-8d1f-3a76ea08a8d7" />
+<img width="1901" height="934" alt="2" src="https://github.com/user-attachments/assets/9ee155ef-ed5c-4fe3-b63e-466ce9a9a2ec" />
+<img width="1911" height="942" alt="1" src="https://github.com/user-attachments/assets/1149d03b-80a3-4068-820b-be6484af4991" />
+<img width="1505" height="675" alt="3" src="https://github.com/user-attachments/assets/a245bcdf-f5e1-430a-b472-a475caed2c14" />
+<img width="1895" height="939" alt="4" src="https://github.com/user-attachments/assets/b7d822ba-487d-42f0-b25c-755440e682da" />
+
 
 ---
 

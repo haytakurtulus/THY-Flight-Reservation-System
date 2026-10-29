@@ -1,0 +1,256 @@
+﻿/* --- 1. DEĞİŞKENLER VE SIFIRLAMA --- */
+:root {
+    --color1: #ffffff; 
+    --colo2: #232b38; 
+    --thy-red: #c70000; 
+    --bg-gray: #f4f4f4; /* Sayfa Arka Planı */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-gray);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    display: block;
+    min-height: 100vh;
+}
+
+/* ---  NAVİGASYON BARI  --- */
+header {
+    width: 100%;
+    background-color: var(--colo2);
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 12px 30px;
+    background-color: var(--colo2);
+}
+
+
+.Logo img {
+    height: 40px; 
+    vertical-align: middle;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+    .menu li {
+        padding-left: 30px;
+    }
+
+        .menu li a {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--color1);
+            text-align: center;
+            transition: 0.15s ease-in-out;
+            position: relative;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+            /* Menü alt çizgi animasyonu */
+            .menu li a::after {
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: var(--thy-red); 
+                transition: 0.2s ease-in-out;
+            }
+
+            .menu li a:hover::after {
+                width: 100%;
+            }
+
+
+.open-menu, .close-menu { 
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* --- GENEL SAYFA DÜZENİ --- */
+.main-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 900px; 
+    text-align: center;
+    margin: 40px auto; 
+}
+
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+h2 {
+    color: var(--thy-red);
+    margin-bottom: 25px;
+}
+
+
+
+/* Yazı Etiketleri */
+span {
+    font-weight: 600;
+    color: #333;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+/* Dropdown ve Textboxlar */
+select, input[type="text"], input[type="date"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-family: inherit;
+}
+
+/* Butonlar */
+input[type="submit"], button {
+    background-color: var(--thy-red);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.3s;
+}
+
+    input[type="submit"]:hover, button:hover {
+        background-color: #900000;
+    }
+
+/* Hata Mesajı */
+span[style*="Red"] {
+    color: red !important;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* ---  TABLO TASARIMI  --- */
+.ucus-tablosu {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+    .ucus-tablosu th {
+        background-color: var(--thy-red);
+        color: white;
+        padding: 12px;
+        text-align: left;
+    }
+
+    .ucus-tablosu td {
+        border-bottom: 1px solid #ddd;
+        padding: 12px;
+        color: #333;
+        text-align: left;
+    }
+
+    .ucus-tablosu tr:hover {
+        background-color: #f9f9f9;
+    }
+
+/* ---  GİRİŞ EKRANI  --- */
+.login-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 350px;
+    text-align: center;
+    margin: 100px auto; 
+}
+
+
+/* Arama Kutusu Konteynerı */
+.search-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: left; 
+}
+
+/* Yan Yana Dizme Sistemi */
+.form-row {
+    display: flex;
+    gap: 15px; 
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin-top: 15px;
+}
+
+.form-group {
+    flex: 1; 
+    min-width: 150px; 
+}
+
+/* Butonun sağa yaslanması için */
+.btn-container {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.btn-search {
+    background-color: var(--thy-red);
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .btn-search:hover {
+        background-color: #900000;
+    }
+
+.btn-admin-link {
+    color: #dc3545 !important; 
+    font-weight: bold;
+}
+
+.btn-boss-link {
+    color: #ffc107 !important; 
+    font-weight: bold;
+}

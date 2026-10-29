@@ -1,0 +1,200 @@
+﻿/* --- GENEL AYARLAR --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h3, h4 {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* --- KART YAPISI (Uçuş Ekleme Paneli) --- */
+.card {
+    background-color: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #232b38; /* THY Koyu Lacivert */
+    color: #fff;
+    padding: 15px 20px;
+    border-bottom: 1px solid #1c222d;
+}
+
+    .card-header h4 {
+        margin: 0;
+        font-size: 1.1rem;
+    }
+
+.card-body {
+    padding: 25px;
+}
+
+/* --- FORM ELEMANLARI VE GRID --- */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+/*  sütun yapısı */
+.col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.col-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out;
+    box-sizing: border-box; 
+}
+
+    .form-control:focus {
+        border-color: #c8102e; 
+        outline: 0;
+    }
+
+/* --- BUTONLAR --- */
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+/* Ekleme Butonu  */
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+    .btn-success:hover {
+        background-color: #218838;
+    }
+
+/* Silme Butonu */
+.btn-danger {
+    background-color: #c8102e;
+    color: white;
+}
+
+    .btn-danger:hover {
+        background-color: #a00d25;
+    }
+
+/* Güncelle Butonu */
+.btn-warning {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+    .btn-warning:hover {
+        background-color: #e0a800;
+    }
+
+/*TABLO (GRIDVIEW) */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+    .table th, .table td {
+        padding: 12px;
+        vertical-align: middle;
+        border-top: 1px solid #dee2e6;
+    }
+
+    .table thead th, .table th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #dee2e6;
+        background-color: #c8102e; 
+        color: white;
+        text-align: left;
+    }
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+    .table-bordered th, .table-bordered td {
+        border: 1px solid #dee2e6;
+    }
+
+
+.table .form-control {
+    display: inline-block;
+    width: auto;
+    margin-right: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .col-md-3, .col-md-9 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .btn-block {
+        margin-top: 10px;
+    }
+}

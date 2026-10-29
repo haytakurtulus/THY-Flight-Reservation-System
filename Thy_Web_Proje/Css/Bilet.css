@@ -1,0 +1,153 @@
+﻿/* biletlerim.css */
+
+.tickets-container {
+    padding: 40px;
+    background-color: #f4f6f9;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; 
+}
+
+.page-title {
+    color: #232b38;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* BİLET KARTI TASARIMI */
+.ticket-card {
+    background: white;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+    .ticket-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+/* Sol Taraf  */
+.ticket-left {
+    background: linear-gradient(135deg, #c41230 0%, #a00f28 100%);
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px dashed rgba(255,255,255,0.3);
+}
+
+.ticket-logo {
+    transform: rotate(-90deg);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+/* Orta Kısım  */
+.ticket-middle {
+    flex: 1;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.route-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.city-code {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #232b38;
+}
+
+.city-name {
+    font-size: 0.9rem;
+    color: #888;
+    display: block;
+}
+
+.plane-icon {
+    color: #c41230;
+    font-size: 1.5rem;
+    flex: 1;
+    text-align: center;
+}
+
+.flight-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.info-item span {
+    display: block;
+    font-size: 0.8rem;
+    color: #999;
+    text-transform: uppercase;
+}
+
+.info-item strong {
+    display: block;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Sağ Taraf  */
+.ticket-right {
+    background-color: #f8f9fa;
+    width: 180px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px dashed #ddd;
+    text-align: center;
+}
+
+.price-tag {
+    font-size: 1.6rem;
+    color: #c41230;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.btn-cancel {
+    background-color: transparent;
+    border: 1px solid #999;
+    color: #666;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .btn-cancel:hover {
+        background-color: #c41230;
+        color: white;
+        border-color: #c41230;
+    }
+
+/* Bilet Hiç Yoksa Gösterilecek Mesaj */
+.no-ticket-box {
+    text-align: center;
+    color: #666;
+    margin-top: 50px;
+}

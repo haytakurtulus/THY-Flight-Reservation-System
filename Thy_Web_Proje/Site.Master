@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Thy_Web_Proje.Site" %>
+<%-- Master page açtık çünkü her sayfaya navigasyon barı ekleme zahmetinden kurtulduk --%>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>THY Proje</title>
+    <%-- Bu font linki sayesinde navigasyon barı resmimiz ve fontumuz düzgün gözüküyor --%>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <%-- Bootstrap5.3.2 Sayesinde normalc css tasarımlarının ilerisinde renk kodları ve tasarımlar kullabiliyoruz --%>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <%-- Normal css dosyamız --%>
+    <link href="Css/Tasarim.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <header>
+            <nav>
+                
+                <ul class="nav-bar">
+                    <li class="Logo">
+                        <a href="Default.aspx"><img src="Resimler/Thy_Logo.png" alt="THY Logo" /></a>
+                    </li>
+                    
+                    <div class="menu">
+                        <%-- Buttonların ID tanımlaları ve OnClick yani işlevleri olacağının bildirisi --%>
+                        <li><asp:LinkButton ID="btnUcusBul" runat="server" OnClick="btnUcusBul_Click">Uçuş Bul</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="btnBiletlerim" runat="server" OnClick="btnBiletlerim_Click">Biletlerim</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="btnProfil" runat="server" OnClick="btnProfil_Click">Profil</asp:LinkButton></li>
+                        <%-- Yönetim paneli ve ŞirketPaneli şu anda de aktif --%>
+                        <li id="liAdminPanel" runat="server" visible="false">
+                        <asp:LinkButton ID="btnAdminGit" runat="server" OnClick="btnAdminGit_Click" CssClass="btn-admin-link">
+                        <i class="fas fa-cog"></i> YÖNETİM PANELİ
+                        </asp:LinkButton>
+                        </li>
+
+                        <li id="liBossPanel" runat="server" visible="false">
+                        <asp:LinkButton ID="btnBossGit" runat="server" OnClick="btnBossGit_Click" CssClass="btn-boss-link">
+                        <i class="fas fa-chart-line"></i> ŞİRKET PANELİ
+                        </asp:LinkButton>
+                        </li>
+
+                        <li><asp:LinkButton ID="btnCikis" runat="server" OnClick="btnCikis_Click">Çıkış Yap</asp:LinkButton></li>
+                        
+                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                    </div>
+                    
+                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                    <input type="checkbox" id="check" />
+                </ul>
+            </nav>
+        </header>
+        <%-- Main Content yani master page i her çağırmak istediğimizde kullanmamız için olan ID tanımalamsı --%>
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+</body>
+</html>

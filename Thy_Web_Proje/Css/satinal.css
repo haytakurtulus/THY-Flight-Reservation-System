@@ -1,0 +1,154 @@
+﻿/* satinal.css */
+
+.payment-container {
+    padding: 40px;
+    background-color: #f4f6f9;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.ticket-card {
+    background: white;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Kırmızı Başlık */
+.ticket-header {
+    background: #c41230; 
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .ticket-header h2 {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+.header-logo img {
+    height: 40px;
+    filter: brightness(0) invert(1); 
+}
+
+/* İçerik Alanı */
+.ticket-body {
+    padding: 30px;
+}
+
+/* Uçuş Bilgi Kutusu */
+.flight-section {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+    border-left: 5px solid #232b38; 
+}
+
+.section-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.flight-route {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.city {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.plane-icon {
+    color: #c41230;
+    font-size: 1.5rem;
+}
+
+.flight-details-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.info-box span {
+    display: block;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.info-box strong {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+}
+
+
+
+.total-price {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+    .total-price span {
+        font-size: 0.9rem;
+        opacity: 0.8;
+        color: #ffffff;
+    }
+
+    .total-price strong {
+        font-size: 2.2rem;
+        color: #ffffff;
+    }
+
+.btn-confirm {
+    background-color: #c41230;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .btn-confirm:hover {
+        background-color: #a00d25;
+        transform: translateY(-2px);
+    }
+.payment-summary {
+    
+    background-color: #232b38; 
+
+    color: #ffffff; 
+
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

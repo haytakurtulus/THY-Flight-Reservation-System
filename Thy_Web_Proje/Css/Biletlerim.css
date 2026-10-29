@@ -1,0 +1,157 @@
+﻿/*  Uçuş Kartı Tasarımı */
+
+body {
+    background-color: #f4f6f9; /* Sayfa arka planı */
+}
+
+.tickets-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-title {
+    color: #232b38;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #c41230; 
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
+.ticket-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    display: flex; 
+    margin-bottom: 25px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 1px solid #e1e1e1;
+}
+
+    .ticket-card:hover {
+        transform: translateY(-5px); 
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+/* Sol Taraf: Logo ve Kırmızı Şerit */
+.ticket-left {
+    background: #c41230;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.brand-rotate {
+    transform: rotate(-90deg);
+    font-weight: bold;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    font-size: 1.2rem;
+}
+
+/* Orta Kısım: Uçuş Bilgileri */
+.ticket-middle {
+    flex: 1; 
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.route-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.city-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.city-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.flight-icon {
+    color: #c41230;
+    font-size: 1.5rem;
+    padding: 0 20px;
+    border-bottom: 2px dotted #ccc; 
+    flex: 1;
+    text-align: center;
+    margin: 0 15px;
+    position: relative;
+    top: -5px;
+}
+
+.info-grid {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.lbl {
+    font-size: 0.85rem;
+    color: #888;
+    text-transform: uppercase;
+}
+
+.val {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #232b38;
+}
+
+/* Sağ Taraf: Fiyat ve Buton */
+.ticket-right {
+    width: 180px;
+    background-color: #f9f9f9;
+    border-left: 2px dashed #d1d1d1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.price-tag {
+    font-size: 1.5rem;
+    color: #c41230;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.ticket-no {
+    font-size: 0.8rem;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.btn-detail {
+    background-color: #232b38;
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+    .btn-detail:hover {
+        background-color: #c41230;
+    }

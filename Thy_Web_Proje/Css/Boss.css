@@ -1,0 +1,30 @@
+﻿
+
+.card-box {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* KART RENKLERİ */
+.bg-money {
+    background-color: #28a745; 
+}
+
+.bg-users {
+    background-color: #17a2b8; 
+}
+
+.bg-flight {
+    background-color: #ffc107; 
+    color: #333; 
+}
+
+
+.table th {
+    background-color: #343a40;
+    color: white;
+}
